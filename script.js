@@ -1,14 +1,37 @@
-const secretNumber = 4;
+console.log("Print all numbers between -10 and 19");
+let num = -10;
 
-let stringGuess = prompt("What is your guess?");
-let guess = Number(stringGuess);
+while (num < 20){
+    console.log(num);
+    num++;
+}
 
-if (guess === secretNumber) {
-    console.log("You got it right!!");
+console.log("Print all even numbers between 10 and 40");
+let x = 10;
+
+while (x < 41){
+    if(x % 2 === 0){
+        console.log(x);
+    }
+x++;
 }
-else if (guess > secretNumber) {
-    console.log("Your guess is too high");
+
+console.log("Print all odd numbers between 300 and 333");
+let j = 300;
+
+while (j < 333){
+    if(j % 2 != 0){
+        console.log(j);
+    }
+    j++;
 }
-else {
-    console.log("Your guess is too low");
+
+console.log("Print all numbers divisible by 5 and 3 between 5 and 50");
+let y = 5;
+
+while (y < 50){
+    if(y % 5 === 0 && y % 3 === 0){
+        console.log(y);
+    }
+    y++;
 }
