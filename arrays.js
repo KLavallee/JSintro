@@ -45,9 +45,19 @@ var friendGroups = [
 
 // FOREACH INSTEAD OF ITERATION USING A FOR LOOP
 
-colors.forEach(function(friends){
-    console.log(friends);
-});
+// colors.forEach(function(friends){
+//     console.log(friends);
+// });
+
+// friendGroups.forEach(function(friends) {
+//     console.log(friends);
+// })
+
+for(var i = 0; i < friendGroups.length; i++) {
+    for(var j = 0; j < friendGroups.length; j++) {
+        console.log(friendGroups[i][j]);
+    }
+}
 
 // colors.forEach(printColor);
 
